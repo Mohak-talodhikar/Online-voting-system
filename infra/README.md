@@ -12,6 +12,7 @@ infra/
 │   └── outputs.tf         # Output values
 └── cloudformation/         # CloudFormation/SAM template
     └── template.yaml      # SAM template (1023 lines)
+    
 ```
 
 ## AWS Resources
