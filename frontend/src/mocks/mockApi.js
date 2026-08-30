@@ -4,7 +4,7 @@
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-let electionStatus = 'NOT_STARTED';
+let electionStatus = 'RUNNING';
 let hasVoted = {};
 let candidates = [
   { candidate_id: 'pres_001', name: 'Rahul Sharma', party: 'Vision Party', role: 'President' },

@@ -14,6 +14,8 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import Container from '@mui/material/Container';
 import Fade from '@mui/material/Fade';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
@@ -24,6 +26,8 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
+import HowToVoteIcon from '@mui/icons-material/HowToVote';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 
 
 const AuthForm = () => {
@@ -81,6 +85,24 @@ const AuthForm = () => {
     setSuccess("");
     setForgotPasswordError("");
     setForgotPasswordSuccess("");
+  };
+
+  const handleQuickDemoLogin = (role) => {
+    if (role === 'student') {
+      setFormData(prev => ({
+        ...prev,
+        email: 'student@rcert.edu',
+        password: 'password123'
+      }));
+      setError("");
+    } else if (role === 'admin') {
+      setFormData(prev => ({
+        ...prev,
+        email: 'admin@rcert.edu',
+        password: 'admin123'
+      }));
+      setError("");
+    }
   };
 
 
@@ -533,9 +555,57 @@ const AuthForm = () => {
                 /* --- Render Main Login/Signup Form --- */
                 (
                   <form onSubmit={handleSubmit} style={{ width: '100%', boxSizing: 'border-box' }}>
-                    <Typography variant="h5" component="h1" gutterBottom align="center" sx={{ mb: 3, fontWeight: 'bold', color: theme.palette.text.primary }}>
+                    <Typography variant="h5" component="h1" gutterBottom align="center" sx={{ mb: isLogin ? 1.5 : 3, fontWeight: 'bold', color: theme.palette.text.primary }}>
                       {isLogin ? "Welcome Back!" : "Create Account"}
                     </Typography>
+
+                    {isLogin && (
+                      <Box
+                        sx={{
+                          mb: 2.5,
+                          p: 1.5,
+                          borderRadius: 2,
+                          bgcolor: 'rgba(21, 101, 192, 0.06)',
+                          border: '1px dashed rgba(21, 101, 192, 0.4)',
+                          textAlign: 'center',
+                        }}
+                      >
+                        <Typography
+                          variant="caption"
+                          sx={{
+                            display: 'block',
+                            fontWeight: 700,
+                            color: 'primary.main',
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase',
+                            fontSize: '0.72rem',
+                            mb: 1,
+                          }}
+                        >
+                          Quick Demo Access (1-Click Fill)
+                        </Typography>
+                        <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} justifyContent="center">
+                          <Chip
+                            icon={<HowToVoteIcon fontSize="small" />}
+                            label="Demo Voter (Student)"
+                            color="primary"
+                            variant="outlined"
+                            size="small"
+                            onClick={() => handleQuickDemoLogin('student')}
+                            sx={{ cursor: 'pointer', fontWeight: 600, '&:hover': { bgcolor: 'primary.light', color: '#fff' } }}
+                          />
+                          <Chip
+                            icon={<AdminPanelSettingsIcon fontSize="small" />}
+                            label="Demo Admin"
+                            color="secondary"
+                            variant="outlined"
+                            size="small"
+                            onClick={() => handleQuickDemoLogin('admin')}
+                            sx={{ cursor: 'pointer', fontWeight: 600, '&:hover': { bgcolor: 'secondary.light', color: '#fff' } }}
+                          />
+                        </Stack>
+                      </Box>
+                    )}
 
                     {!isLogin && (
                       <>
