@@ -4,6 +4,7 @@
 /.vscode
 
 # dependencies
+/frontend/node_modules
 /node_modules
 /.pnp
 .pnp.js
@@ -14,6 +15,8 @@ package-lock.json
 
 # production
 /build
+frontend/build/
+build/
 
 # agents
 /.agents

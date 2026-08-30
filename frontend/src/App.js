@@ -176,7 +176,7 @@ function App() {
   const defaultRedirectPath = getRedirectPath();
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<WelcomePage />} />
 

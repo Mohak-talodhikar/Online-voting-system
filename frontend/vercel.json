@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/voting/(.*)",
+      "destination": "/voting/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
