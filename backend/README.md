@@ -44,6 +44,7 @@ backend/
 | `Votes` | Student vote records | `student_id` + `role_voted_for` |
 | `Candidates` | Candidate profiles | `candidate_id` |
 | `Students` | Student registration data | `student_id` |
+| `Attendance` | Attendance / eligibility data | `student_id` |
 
 ## Authentication Flow
 

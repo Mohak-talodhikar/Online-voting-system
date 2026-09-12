@@ -51,7 +51,7 @@ frontend/
 - **React 18** — Functional components with hooks
 - **Material UI (MUI)** — Component library and theming
 - **React Router v6** — Client-side routing
-- **Axios** — HTTP client (production mode)
+- **Fetch via httpClient** — HTTP client (production mode, see `src/api/httpClient.js`)
 
 ## Local Development
 

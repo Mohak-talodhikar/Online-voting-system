@@ -9,6 +9,14 @@ A production-grade, serverless voting platform built on AWS, serving 500+ studen
 ![Python](https://img.shields.io/badge/Python-Lambda-yellow)
 ![React](https://img.shields.io/badge/React-frontend-61DAFB)
 
+> **Live Demo:** https://prathameshlonare.me/voting/ — no setup needed, runs in demo mode with mock data.
+>
+> **Demo logins (1-click fill on login page):**
+> | Role | Email | Password |
+> |------|-------|----------|
+> | Voter (Student) | `student@rcert.edu` | `password123` |
+> | Admin | `admin@rcert.edu` | `admin123` |
+
 ## Architecture
 
 ![System Architecture](screenshots/architecture%20diagram/system_architecture.png)
@@ -122,7 +130,11 @@ See individual folder READMEs for detailed documentation.
 
 ## Quick Start
 
-### Docker (Recommended)
+### Try Demo (No Install)
+
+Visit https://prathameshlonare.me/voting/ and use 1-click demo logins on the login page. Frontend runs with in-memory mocks — no backend / AWS needed.
+
+### Docker (Recommended for full local stack)
 
 ```bash
 # Clone the repository
@@ -199,19 +211,14 @@ sam build && sam deploy --guided
 
 **Deploy time:** 12 min → 3 min (75% reduction)
 
-## Learning Journey
-
-This project was built as part of a 100-day Serverless learning challenge:
-- **Days 1-12:** AWS Lambda, DynamoDB, API Gateway basics
-- **Days 13-16:** Docker containerization, multi-stage builds, networking
-- **Days 17+:** CI/CD, monitoring, production hardening
-
-## Author
+## Team
 
 **Prathamesh Lonare**
 - [LinkedIn](https://www.linkedin.com/in/prathamesh-lonare21/)
 - [GitHub](https://github.com/prathameshlonare)
 - [Portfolio](https://prathameshlonare.me)
+
+**Contributors:** Swapnil Kumbhare, Mohak Talodhikar, Suyog Madavi - departmental election project team.
 
 ## License
 
