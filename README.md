@@ -9,7 +9,7 @@ A production-grade, serverless voting platform built on AWS, serving 500+ studen
 ![Python](https://img.shields.io/badge/Python-Lambda-yellow)
 ![React](https://img.shields.io/badge/React-frontend-61DAFB)
 
-> **Live Demo:** https://prathameshlonare.me/voting/ — no setup needed, runs in demo mode with mock data.
+> **Live Demo:** https://prathameshlonare.me/voting/ - no setup needed, runs in demo mode with mock data.
 >
 > **Demo logins (1-click fill on login page):**
 > | Role | Email | Password |
@@ -112,27 +112,22 @@ See individual folder READMEs for detailed documentation.
 
 ## Screenshots
 
-### Login & Registration
-![Login Page](screenshots/voting%20app%20photos/login_page.jpeg)
-![Sign Up](screenshots/voting%20app%20photos/sign_up.jpeg)
-
-### Voting Flow
-![Welcome Page](screenshots/voting%20app%20photos/welcome_page.jpeg)
-![Vote Form](screenshots/voting%20app%20photos/vote_form.jpeg)
-
-### Admin Dashboard
-![Election Control](screenshots/voting%20app%20photos/election_control.jpeg)
-![Add Candidate](screenshots/voting%20app%20photos/add_candidate.jpeg)
-
-### Results
-![Vote Results](screenshots/voting%20app%20photos/vote_result.jpeg)
-![Results](screenshots/voting%20app%20photos/results.jpeg)
+| Screen | Preview |
+|--------|---------|
+| **Login** - voter / admin entry with 1-click demo fill | <img src="screenshots/voting%20app%20photos/login_page.jpeg" width="400" alt="Login Page" /> |
+| **Sign Up** - registration with student ID + OTP step | <img src="screenshots/voting%20app%20photos/sign_up.jpeg" width="400" alt="Sign Up" /> |
+| **Welcome** - landing page with election info | <img src="screenshots/voting%20app%20photos/welcome_page.jpeg" width="400" alt="Welcome Page" /> |
+| **Vote Form** - ballot for President + Secretary | <img src="screenshots/voting%20app%20photos/vote_form.jpeg" width="400" alt="Vote Form" /> |
+| **Election Control** - admin start / stop / declare | <img src="screenshots/voting%20app%20photos/election_control.jpeg" width="400" alt="Election Control" /> |
+| **Add Candidate** - admin candidate management | <img src="screenshots/voting%20app%20photos/add_candidate.jpeg" width="400" alt="Add Candidate" /> |
+| **Vote Result** - confirmation after submit | <img src="screenshots/voting%20app%20photos/vote_result.jpeg" width="400" alt="Vote Result" /> |
+| **Results** - animated counts with celebration | <img src="screenshots/voting%20app%20photos/results.jpeg" width="400" alt="Results" /> |
 
 ## Quick Start
 
 ### Try Demo (No Install)
 
-Visit https://prathameshlonare.me/voting/ and use 1-click demo logins on the login page. Frontend runs with in-memory mocks — no backend / AWS needed.
+Visit https://prathameshlonare.me/voting/ and use 1-click demo logins on the login page. Frontend runs with in-memory mocks - no backend / AWS needed.
 
 ### Docker (Recommended for full local stack)
 
