@@ -31,6 +31,9 @@ jobs:
       - name: Run tests with coverage
         run: yarn test -- --watchAll=false --coverage --coverageReporters=text --coverageReporters=lcov
 
+      - name: Build production bundle
+        run: yarn build
+
       - name: Upload coverage artifact
         if: always()
         uses: actions/upload-artifact@v4

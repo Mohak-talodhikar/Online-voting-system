@@ -200,14 +200,14 @@ sam build && sam deploy --guided
 ## CI/CD Pipeline
 
 ```yaml
-# GitHub Actions workflow
+# GitHub Actions CI (ci.yml)
 1. Lint (ESLint + Prettier)
 2. Test (34 tests, Jest)
 3. Security (Bandit + npm audit)
-4. Build (Docker multi-stage)
-5. Deploy (AWS ECS/Lambda)
-
+4. Build verification (React production bundle + Docker multi-stage)
 ```
+
+Live demo is hosted statically on portfolio (no auto-deploy from this repo).
 
 **Deploy time:** 12 min → 3 min (75% reduction)
 
