@@ -176,8 +176,6 @@ sam build && sam deploy --guided
 - Declare results with one click
 - Reset election cycle for next use
 - Upload student attendance CSV
-
-
 ```
 
 ## Author
