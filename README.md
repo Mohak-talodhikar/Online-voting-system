@@ -177,34 +177,8 @@ sam build && sam deploy --guided
 - Reset election cycle for next use
 - Upload student attendance CSV
 
-### DevOps
-- Infrastructure as Code (Terraform + CloudFormation)
-- CI/CD with GitHub Actions (lint, test, security scan, deploy)
-- Docker containerization with multi-stage builds
-- Network isolation (frontend-net, backend-net)
-- Volume persistence for local DynamoDB
-- CloudWatch monitoring dashboard + alarms
-
-## CI/CD Pipeline
-
-```yaml
-# GitHub Actions workflow
-1. Lint (ESLint + Prettier)
-2. Test (34 tests, Jest)
-3. Security (Bandit + npm audit)
-4. Build (Docker multi-stage)
-5. Deploy (AWS ECS/Lambda)
 
 ```
-
-**Deploy time:** 12 min → 3 min (75% reduction)
-
-## Learning Journey
-
-This project was built as part of a 100-day Serverless learning challenge:
-- **Days 1-12:** AWS Lambda, DynamoDB, API Gateway basics
-- **Days 13-16:** Docker containerization, multi-stage builds, networking
-- **Days 17+:** CI/CD, monitoring, production hardening
 
 ## Author
 
